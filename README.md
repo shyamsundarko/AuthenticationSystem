@@ -1,11 +1,9 @@
 # AuthenticationSystem
 This is an authentication system which just allows users to create an account and sign in. 
 
-#### 1) **HTML** 
-#### 2) **CSS** 
-#### 3) **Bootstrap** 
-#### 4) **PHP**
-#### 5) **SQL**
+## Frontend: HTML, CSS, Bootstrap
+## Backend: PHP
+## Database: SQL
 <br>
 
 

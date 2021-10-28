@@ -63,8 +63,6 @@
         
         
     </main>
-    
-    <script src="./js/bootstrap.js"></script>
 
 </body>
 </html>
@@ -81,27 +79,13 @@ if (isset($_POST['submit']))
     $age1 = $_POST['age'];
     $user1 = $_POST['username'];
     $pass1 = $_POST['password'];
-
-    /*if (strlen($user1) < 6) {
-        $age_error = 'Username must be longer than 6 characters';
-        echo $age_error;
-    }
-    else if (strlen($pass1) < 6) {
-        $pass_error = 'Password must be longer than 6 characters';
-    }
-    else if ($age1 < 10) {
-        $age_error = 'Users need to be at least 10 years old';
-    }
-    else {*/
-        $result = 0;
-        $hashPass1 = hashing($pass1);
-        $query1 = "INSERT INTO registrationinfo(Name,Age,Username,Password) VALUES('$name1','$age1','$user1','$hashPass1')";
-        $result = mysqli_query($connect, $query1);
-        mysqli_close($connect);
-        echo "<script>location.href = './index.php';</script>";
-    //}
-
-
+    $result = 0;
+    $hashPass1 = hashing($pass1);
+    $query1 = "INSERT INTO registrationinfo(Name,Age,Username,Password) VALUES('$name1','$age1','$user1','$hashPass1')";
+    $result = mysqli_query($connect, $query1);
+    mysqli_close($connect);
+    echo "<script>location.href = './index.php';</script>";
+ 
 }
 ?>
    

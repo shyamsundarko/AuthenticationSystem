@@ -1,5 +1,5 @@
 # AuthenticationSystem
-This is an authentication system which just allows users to create an account and sign in. 
+This is an authentication system which allows users to create an account and sign in. 
 
 ## Frontend: HTML, CSS, Bootstrap
 ## Backend: PHP
